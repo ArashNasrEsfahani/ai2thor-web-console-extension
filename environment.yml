@@ -1,0 +1,10 @@
+# conda env create -f environment.yml && conda activate thor-ext
+# (or: python3.10 -m venv ~/thor-env && ~/thor-env/bin/pip install -r requirements.txt)
+name: thor-ext
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements.txt

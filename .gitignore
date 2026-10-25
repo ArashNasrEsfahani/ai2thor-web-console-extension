@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv*/
+venv/
+
+# Runtime stores the console writes (SQLite, trace store, WAL companions)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+trace.db*
+sim/loop_reports.jsonl
+sim/knowledge_base_embeddings.json
+sim/captures/
+sim/datasets/
+*.log
+
+# Local settings (created from sim/gui_config.example.json by scripts/start_console.sh)
+sim/gui_config.json
+
+# Detector weights (downloaded by scripts/download_weights.py from Hugging Face)
+sim/weights/
+*.pt
+*.pth
+*.onnx
+
+# Secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+.playwright-mcp/
+_tools_local/
+
+# Console run output
+sim/step4/console_*
+sim/step4/*.map_report.json
+sim/eval_*.json
+sim/eval_results.json
+sim/dataset/general_audit.jsonl
+sim/memory_*.log
+sim/step4/*.map.png
+# The knowledge base the agent writes to (starts empty when missing)
+sim/knowledge_base.json
+sim/knowledge_base.json.*
+*.lock

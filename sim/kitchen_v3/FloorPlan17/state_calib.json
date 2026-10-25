@@ -1,0 +1,192 @@
+{
+ "scene": "FloorPlan17",
+ "when": "2026-10-20 18:24:41",
+ "floors_box_area": {
+  "open": 435,
+  "on": 121,
+  "sliced": 180,
+  "cooked": 140,
+  "broken": 144,
+  "dirty": 1566,
+  "filled": 3780
+ },
+ "thresholds": {
+  "open": {
+   "0": 0.993920087814331,
+   "1": 0.942253828048706
+  },
+  "on": {
+   "0": 0.9968019723892212,
+   "1": 0.9714415073394775
+  },
+  "sliced": {
+   "0": 0.9583826065063477,
+   "1": 0.5001831650733948
+  },
+  "cooked": {
+   "0": 0.9967178702354431,
+   "1": 0.9962215423583984
+  },
+  "broken": {
+   "0": 0.5345970988273621,
+   "1": 0.6034697890281677
+  },
+  "dirty": {
+   "0": 0.6522812843322754,
+   "1": 0.9970024228096008
+  },
+  "filled": {
+   "0": 0.9998753070831299,
+   "1": 0.9785405397415161
+  }
+ },
+ "target_precision": 0.95,
+ "min_accept": 20,
+ "labels_per_axis": {
+  "open": 51,
+  "on": 51,
+  "sliced": 33,
+  "cooked": 25,
+  "broken": 28,
+  "dirty": 42,
+  "filled": 70
+ },
+ "abstain_axes_too_few_labels": [],
+ "val_report": {
+  "open": {
+   "applicable_detections": 19965,
+   "answered": 16001,
+   "coverage": 0.801,
+   "accuracy_answered": 0.953,
+   "per_value": {
+    "0": {
+     "asserted": 6622,
+     "precision": 0.952
+    },
+    "1": {
+     "asserted": 9379,
+     "precision": 0.954
+    }
+   },
+   "unmatched_detections": 760,
+   "false_assertions_unmatched": 234
+  },
+  "on": {
+   "applicable_detections": 6489,
+   "answered": 5390,
+   "coverage": 0.831,
+   "accuracy_answered": 0.95,
+   "per_value": {
+    "0": {
+     "asserted": 2762,
+     "precision": 0.95
+    },
+    "1": {
+     "asserted": 2628,
+     "precision": 0.95
+    }
+   },
+   "unmatched_detections": 938,
+   "false_assertions_unmatched": 416
+  },
+  "sliced": {
+   "applicable_detections": 4650,
+   "answered": 3992,
+   "coverage": 0.858,
+   "accuracy_answered": 0.96,
+   "per_value": {
+    "0": {
+     "asserted": 615,
+     "precision": 0.951
+    },
+    "1": {
+     "asserted": 3377,
+     "precision": 0.961
+    }
+   },
+   "unmatched_detections": 721,
+   "false_assertions_unmatched": 336
+  },
+  "cooked": {
+   "applicable_detections": 2239,
+   "answered": 1511,
+   "coverage": 0.675,
+   "accuracy_answered": 0.95,
+   "per_value": {
+    "0": {
+     "asserted": 942,
+     "precision": 0.95
+    },
+    "1": {
+     "asserted": 569,
+     "precision": 0.951
+    }
+   },
+   "unmatched_detections": 357,
+   "false_assertions_unmatched": 130
+  },
+  "broken": {
+   "applicable_detections": 212,
+   "answered": 211,
+   "coverage": 0.995,
+   "accuracy_answered": 0.962,
+   "per_value": {
+    "0": {
+     "asserted": 71,
+     "precision": 0.986
+    },
+    "1": {
+     "asserted": 140,
+     "precision": 0.95
+    }
+   },
+   "unmatched_detections": 37,
+   "false_assertions_unmatched": 19
+  },
+  "dirty": {
+   "applicable_detections": 2192,
+   "answered": 805,
+   "coverage": 0.367,
+   "accuracy_answered": 0.97,
+   "per_value": {
+    "0": {
+     "asserted": 435,
+     "precision": 0.966
+    },
+    "1": {
+     "asserted": 370,
+     "precision": 0.976
+    }
+   },
+   "unmatched_detections": 197,
+   "false_assertions_unmatched": 17
+  },
+  "filled": {
+   "applicable_detections": 2226,
+   "answered": 157,
+   "coverage": 0.071,
+   "accuracy_answered": 0.975,
+   "per_value": {
+    "0": {
+     "asserted": 15,
+     "precision": 1.0
+    },
+    "1": {
+     "asserted": 142,
+     "precision": 0.972
+    }
+   },
+   "unmatched_detections": 192,
+   "false_assertions_unmatched": 6
+  }
+ },
+ "score_sha256": "43aaff3fd317b2e6c67a42295cb664b1154b4da67700498d494f32a948cdb6ba",
+ "frames_view": {
+  "kept": 23407,
+  "quarantined": 798,
+  "excluded": 0,
+  "view_manifest_sha256": "b27800e025d22e0381a0a911706575fd16c13ee2611315982389b4cbc9794879"
+ },
+ "rule": "A28 item 7 (Kitchen 1 rules; <8 labels -> abstain)",
+ "test": "not evaluated here (after the freeze: k23_state_calib.py test)"
+}

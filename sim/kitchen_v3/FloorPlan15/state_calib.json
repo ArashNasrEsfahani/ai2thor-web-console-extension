@@ -1,0 +1,192 @@
+{
+ "scene": "FloorPlan15",
+ "when": "2026-10-18 16:46:22",
+ "floors_box_area": {
+  "open": 1840,
+  "on": 230,
+  "sliced": 416,
+  "cooked": 1104,
+  "broken": 144,
+  "dirty": 1736,
+  "filled": 924
+ },
+ "thresholds": {
+  "open": {
+   "0": 0.7166621685028076,
+   "1": 0.9748867750167847
+  },
+  "on": {
+   "0": 0.9990482926368713,
+   "1": 0.9963656663894653
+  },
+  "sliced": {
+   "0": 0.9999966621398926,
+   "1": 0.5044499635696411
+  },
+  "cooked": {
+   "0": 0.7920171618461609,
+   "1": 1.0
+  },
+  "broken": {
+   "0": 0.9798154830932617,
+   "1": 0.8354945182800293
+  },
+  "dirty": {
+   "0": 0.96608966588974,
+   "1": 0.9614903330802917
+  },
+  "filled": {
+   "0": 0.9995214939117432,
+   "1": 0.9582542777061462
+  }
+ },
+ "target_precision": 0.95,
+ "min_accept": 20,
+ "labels_per_axis": {
+  "open": 47,
+  "on": 47,
+  "sliced": 34,
+  "cooked": 35,
+  "broken": 31,
+  "dirty": 35,
+  "filled": 71
+ },
+ "abstain_axes_too_few_labels": [],
+ "val_report": {
+  "open": {
+   "applicable_detections": 15442,
+   "answered": 12883,
+   "coverage": 0.834,
+   "accuracy_answered": 0.962,
+   "per_value": {
+    "0": {
+     "asserted": 6757,
+     "precision": 0.959
+    },
+    "1": {
+     "asserted": 6126,
+     "precision": 0.966
+    }
+   },
+   "unmatched_detections": 308,
+   "false_assertions_unmatched": 70
+  },
+  "on": {
+   "applicable_detections": 8215,
+   "answered": 4655,
+   "coverage": 0.567,
+   "accuracy_answered": 0.954,
+   "per_value": {
+    "0": {
+     "asserted": 2229,
+     "precision": 0.954
+    },
+    "1": {
+     "asserted": 2426,
+     "precision": 0.955
+    }
+   },
+   "unmatched_detections": 775,
+   "false_assertions_unmatched": 198
+  },
+  "sliced": {
+   "applicable_detections": 6269,
+   "answered": 3554,
+   "coverage": 0.567,
+   "accuracy_answered": 0.977,
+   "per_value": {
+    "0": {
+     "asserted": 502,
+     "precision": 0.958
+    },
+    "1": {
+     "asserted": 3052,
+     "precision": 0.98
+    }
+   },
+   "unmatched_detections": 945,
+   "false_assertions_unmatched": 76
+  },
+  "cooked": {
+   "applicable_detections": 2465,
+   "answered": 445,
+   "coverage": 0.181,
+   "accuracy_answered": 0.955,
+   "per_value": {
+    "0": {
+     "asserted": 409,
+     "precision": 0.958
+    },
+    "1": {
+     "asserted": 36,
+     "precision": 0.917
+    }
+   },
+   "unmatched_detections": 492,
+   "false_assertions_unmatched": 3
+  },
+  "broken": {
+   "applicable_detections": 149,
+   "answered": 147,
+   "coverage": 0.987,
+   "accuracy_answered": 1.0,
+   "per_value": {
+    "0": {
+     "asserted": 53,
+     "precision": 1.0
+    },
+    "1": {
+     "asserted": 94,
+     "precision": 1.0
+    }
+   },
+   "unmatched_detections": 31,
+   "false_assertions_unmatched": 11
+  },
+  "dirty": {
+   "applicable_detections": 3329,
+   "answered": 1260,
+   "coverage": 0.378,
+   "accuracy_answered": 0.977,
+   "per_value": {
+    "0": {
+     "asserted": 651,
+     "precision": 0.966
+    },
+    "1": {
+     "asserted": 609,
+     "precision": 0.989
+    }
+   },
+   "unmatched_detections": 176,
+   "false_assertions_unmatched": 7
+  },
+  "filled": {
+   "applicable_detections": 2650,
+   "answered": 909,
+   "coverage": 0.343,
+   "accuracy_answered": 0.959,
+   "per_value": {
+    "0": {
+     "asserted": 112,
+     "precision": 0.946
+    },
+    "1": {
+     "asserted": 797,
+     "precision": 0.961
+    }
+   },
+   "unmatched_detections": 105,
+   "false_assertions_unmatched": 3
+  }
+ },
+ "score_sha256": "4e110e63a4cc2b4edc51793e7fe77a07725a4e36cc18ffa0cfb7cfeab7cd6b7e",
+ "frames_view": {
+  "kept": 23389,
+  "quarantined": 1201,
+  "excluded": 0,
+  "view_manifest_sha256": "cb88796b30381bdf97e880e1632104930e0f88798e7026029559331f694e5450"
+ },
+ "rule": "A28 item 7 (Kitchen 1 rules; <8 labels -> abstain)",
+ "test": "not evaluated here (after the freeze: k23_state_calib.py test)"
+}

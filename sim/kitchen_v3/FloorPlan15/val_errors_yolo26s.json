@@ -1,0 +1,585 @@
+{
+ "split": "val",
+ "weights": "/tmp/k23_FloorPlan15.yolo26s.pt",
+ "op_conf": 0.25,
+ "images": 2200,
+ "mAP50": 0.9389958625280027,
+ "mAP50_oracle_relabel": 0.9642217710812325,
+ "rows": [
+  {
+   "cls": "Spoon",
+   "n": 161,
+   "ap50": 0.720973886431115,
+   "ap50_oracle_relabel": 0.9504494234881884,
+   "correct": 0.683,
+   "cls_err": 0.28,
+   "loc_err": 0.0,
+   "missed": 0.037,
+   "confused_with": {
+    "Fork": 40,
+    "ButterKnife": 5
+   }
+  },
+  {
+   "cls": "PepperShaker",
+   "n": 245,
+   "ap50": 0.7267959479346123,
+   "ap50_oracle_relabel": 0.9167233749482662,
+   "correct": 0.89,
+   "cls_err": 0.053,
+   "loc_err": 0.008,
+   "missed": 0.049,
+   "confused_with": {
+    "SaltShaker": 13
+   }
+  },
+  {
+   "cls": "SaltShaker",
+   "n": 250,
+   "ap50": 0.7699942314946571,
+   "ap50_oracle_relabel": 0.9747136208278723,
+   "correct": 0.656,
+   "cls_err": 0.32,
+   "loc_err": 0.0,
+   "missed": 0.024,
+   "confused_with": {
+    "PepperShaker": 80
+   }
+  },
+  {
+   "cls": "Faucet",
+   "n": 665,
+   "ap50": 0.7962327273391324,
+   "ap50_oracle_relabel": 0.8236002085869357,
+   "correct": 0.773,
+   "cls_err": 0.084,
+   "loc_err": 0.102,
+   "missed": 0.041,
+   "confused_with": {
+    "Sink": 31,
+    "SinkBasin": 23,
+    "Lettuce": 1
+   }
+  },
+  {
+   "cls": "Fork",
+   "n": 230,
+   "ap50": 0.7967483448655258,
+   "ap50_oracle_relabel": 0.9198270259074359,
+   "correct": 0.843,
+   "cls_err": 0.083,
+   "loc_err": 0.013,
+   "missed": 0.061,
+   "confused_with": {
+    "Spoon": 9,
+    "ButterKnife": 8,
+    "Pot": 1
+   }
+  },
+  {
+   "cls": "Spatula",
+   "n": 222,
+   "ap50": 0.8174500078736193,
+   "ap50_oracle_relabel": 0.8478985400943642,
+   "correct": 0.784,
+   "cls_err": 0.032,
+   "loc_err": 0.05,
+   "missed": 0.135,
+   "confused_with": {
+    "Fork": 2,
+    "ButterKnife": 2,
+    "Egg": 2
+   }
+  },
+  {
+   "cls": "ButterKnife",
+   "n": 320,
+   "ap50": 0.8217907434722082,
+   "ap50_oracle_relabel": 0.8892449165641985,
+   "correct": 0.803,
+   "cls_err": 0.056,
+   "loc_err": 0.022,
+   "missed": 0.119,
+   "confused_with": {
+    "Fork": 10,
+    "Knife": 3,
+    "Spoon": 3
+   }
+  },
+  {
+   "cls": "SinkBasin",
+   "n": 292,
+   "ap50": 0.8390922425672841,
+   "ap50_oracle_relabel": 0.92531177709423,
+   "correct": 0.856,
+   "cls_err": 0.075,
+   "loc_err": 0.003,
+   "missed": 0.065,
+   "confused_with": {
+    "Faucet": 13,
+    "Sink": 8,
+    "Spatula": 1
+   }
+  },
+  {
+   "cls": "Knife",
+   "n": 286,
+   "ap50": 0.8510209191368743,
+   "ap50_oracle_relabel": 0.8813022871550357,
+   "correct": 0.79,
+   "cls_err": 0.031,
+   "loc_err": 0.035,
+   "missed": 0.143,
+   "confused_with": {
+    "ButterKnife": 4,
+    "Spatula": 3,
+    "DishSponge": 1
+   }
+  },
+  {
+   "cls": "Egg",
+   "n": 175,
+   "ap50": 0.8704057638389038,
+   "ap50_oracle_relabel": 0.9341028302078371,
+   "correct": 0.834,
+   "cls_err": 0.063,
+   "loc_err": 0.0,
+   "missed": 0.103,
+   "confused_with": {
+    "Mug": 5,
+    "Knife": 3,
+    "PepperShaker": 1
+   }
+  },
+  {
+   "cls": "Bread",
+   "n": 1451,
+   "ap50": 0.8864823313127216,
+   "ap50_oracle_relabel": 0.888532481113558,
+   "correct": 0.921,
+   "cls_err": 0.001,
+   "loc_err": 0.046,
+   "missed": 0.032,
+   "confused_with": {
+    "Bowl": 1,
+    "Pot": 1
+   }
+  },
+  {
+   "cls": "Tomato",
+   "n": 1165,
+   "ap50": 0.9149855411808098,
+   "ap50_oracle_relabel": 0.9154298804551304,
+   "correct": 0.976,
+   "cls_err": 0.001,
+   "loc_err": 0.015,
+   "missed": 0.008,
+   "confused_with": {
+    "Lettuce": 1
+   }
+  },
+  {
+   "cls": "Lettuce",
+   "n": 1470,
+   "ap50": 0.9391614990569395,
+   "ap50_oracle_relabel": 0.9409254152699366,
+   "correct": 0.961,
+   "cls_err": 0.002,
+   "loc_err": 0.031,
+   "missed": 0.006,
+   "confused_with": {
+    "Apple": 2,
+    "Tomato": 1
+   }
+  },
+  {
+   "cls": "Potato",
+   "n": 525,
+   "ap50": 0.9564772511943271,
+   "ap50_oracle_relabel": 0.9584086271882414,
+   "correct": 0.979,
+   "cls_err": 0.002,
+   "loc_err": 0.01,
+   "missed": 0.01,
+   "confused_with": {
+    "Bread": 1
+   }
+  },
+  {
+   "cls": "Apple",
+   "n": 563,
+   "ap50": 0.9579539302135128,
+   "ap50_oracle_relabel": 0.9619126358902889,
+   "correct": 0.948,
+   "cls_err": 0.007,
+   "loc_err": 0.027,
+   "missed": 0.018,
+   "confused_with": {
+    "Knife": 1,
+    "Mug": 1,
+    "Spatula": 1
+   }
+  },
+  {
+   "cls": "Plate",
+   "n": 588,
+   "ap50": 0.9588667004890763,
+   "ap50_oracle_relabel": 0.9659889691239136,
+   "correct": 0.91,
+   "cls_err": 0.017,
+   "loc_err": 0.009,
+   "missed": 0.065,
+   "confused_with": {
+    "Pan": 9,
+    "WineBottle": 1
+   }
+  },
+  {
+   "cls": "Pan",
+   "n": 695,
+   "ap50": 0.9675012525497843,
+   "ap50_oracle_relabel": 0.969456126083199,
+   "correct": 0.945,
+   "cls_err": 0.001,
+   "loc_err": 0.01,
+   "missed": 0.043,
+   "confused_with": {
+    "StoveBurner": 1
+   }
+  },
+  {
+   "cls": "CounterTop",
+   "n": 2079,
+   "ap50": 0.9716029054394414,
+   "ap50_oracle_relabel": 0.9711831149313574,
+   "correct": 0.937,
+   "cls_err": 0.0,
+   "loc_err": 0.005,
+   "missed": 0.057,
+   "confused_with": {}
+  },
+  {
+   "cls": "DishSponge",
+   "n": 286,
+   "ap50": 0.9751400043041403,
+   "ap50_oracle_relabel": 0.9779501775594356,
+   "correct": 0.986,
+   "cls_err": 0.007,
+   "loc_err": 0.0,
+   "missed": 0.007,
+   "confused_with": {
+    "CoffeeMachine": 1,
+    "Lettuce": 1
+   }
+  },
+  {
+   "cls": "Bowl",
+   "n": 386,
+   "ap50": 0.9775172131663954,
+   "ap50_oracle_relabel": 0.9842497302789155,
+   "correct": 0.956,
+   "cls_err": 0.018,
+   "loc_err": 0.0,
+   "missed": 0.026,
+   "confused_with": {
+    "Mug": 5,
+    "Potato": 1,
+    "Pot": 1
+   }
+  },
+  {
+   "cls": "StoveBurner",
+   "n": 2925,
+   "ap50": 0.9840390665227171,
+   "ap50_oracle_relabel": 0.9843073154810589,
+   "correct": 0.975,
+   "cls_err": 0.001,
+   "loc_err": 0.011,
+   "missed": 0.013,
+   "confused_with": {
+    "Pan": 1,
+    "Kettle": 1
+   }
+  },
+  {
+   "cls": "GarbageCan",
+   "n": 553,
+   "ap50": 0.9872680213662783,
+   "ap50_oracle_relabel": 0.9875090900422295,
+   "correct": 0.98,
+   "cls_err": 0.002,
+   "loc_err": 0.007,
+   "missed": 0.011,
+   "confused_with": {
+    "Fridge": 1
+   }
+  },
+  {
+   "cls": "DiningTable",
+   "n": 846,
+   "ap50": 0.9883460662840317,
+   "ap50_oracle_relabel": 0.9883193751352327,
+   "correct": 0.963,
+   "cls_err": 0.002,
+   "loc_err": 0.011,
+   "missed": 0.024,
+   "confused_with": {
+    "Stool": 1,
+    "Pot": 1
+   }
+  },
+  {
+   "cls": "Mug",
+   "n": 404,
+   "ap50": 0.9889955144060788,
+   "ap50_oracle_relabel": 0.9943511698595486,
+   "correct": 0.978,
+   "cls_err": 0.005,
+   "loc_err": 0.002,
+   "missed": 0.015,
+   "confused_with": {
+    "Window": 1,
+    "Cabinet": 1
+   }
+  },
+  {
+   "cls": "Cup",
+   "n": 430,
+   "ap50": 0.9899079195501519,
+   "ap50_oracle_relabel": 0.9905358971016611,
+   "correct": 0.974,
+   "cls_err": 0.002,
+   "loc_err": 0.0,
+   "missed": 0.023,
+   "confused_with": {
+    "Pot": 1
+   }
+  },
+  {
+   "cls": "Window",
+   "n": 736,
+   "ap50": 0.9916995339326917,
+   "ap50_oracle_relabel": 0.9946435089376178,
+   "correct": 0.978,
+   "cls_err": 0.0,
+   "loc_err": 0.007,
+   "missed": 0.015,
+   "confused_with": {}
+  },
+  {
+   "cls": "SoapBottle",
+   "n": 417,
+   "ap50": 0.9919588181437987,
+   "ap50_oracle_relabel": 0.9923517804231612,
+   "correct": 0.974,
+   "cls_err": 0.002,
+   "loc_err": 0.002,
+   "missed": 0.022,
+   "confused_with": {
+    "Lettuce": 1
+   }
+  },
+  {
+   "cls": "Pot",
+   "n": 849,
+   "ap50": 0.9921139770177312,
+   "ap50_oracle_relabel": 0.9929477131368661,
+   "correct": 0.981,
+   "cls_err": 0.001,
+   "loc_err": 0.005,
+   "missed": 0.013,
+   "confused_with": {
+    "Pan": 1
+   }
+  },
+  {
+   "cls": "Kettle",
+   "n": 640,
+   "ap50": 0.9931357072270476,
+   "ap50_oracle_relabel": 0.996365923527391,
+   "correct": 0.98,
+   "cls_err": 0.009,
+   "loc_err": 0.0,
+   "missed": 0.011,
+   "confused_with": {
+    "Bread": 2,
+    "StoveBurner": 1,
+    "Egg": 1
+   }
+  },
+  {
+   "cls": "Fridge",
+   "n": 876,
+   "ap50": 0.9938844863379377,
+   "ap50_oracle_relabel": 0.9940223134268277,
+   "correct": 0.984,
+   "cls_err": 0.002,
+   "loc_err": 0.005,
+   "missed": 0.009,
+   "confused_with": {
+    "GarbageCan": 2
+   }
+  },
+  {
+   "cls": "StoveKnob",
+   "n": 1744,
+   "ap50": 0.994062655926207,
+   "ap50_oracle_relabel": 0.9941000357559657,
+   "correct": 0.995,
+   "cls_err": 0.0,
+   "loc_err": 0.001,
+   "missed": 0.004,
+   "confused_with": {}
+  },
+  {
+   "cls": "Cabinet",
+   "n": 9520,
+   "ap50": 0.9941068822950719,
+   "ap50_oracle_relabel": 0.9940962281976929,
+   "correct": 0.983,
+   "cls_err": 0.0,
+   "loc_err": 0.008,
+   "missed": 0.009,
+   "confused_with": {
+    "Drawer": 2,
+    "WineBottle": 1,
+    "Bowl": 1
+   }
+  },
+  {
+   "cls": "Sink",
+   "n": 617,
+   "ap50": 0.994330356062624,
+   "ap50_oracle_relabel": 0.9822901025385017,
+   "correct": 0.992,
+   "cls_err": 0.003,
+   "loc_err": 0.002,
+   "missed": 0.003,
+   "confused_with": {
+    "Faucet": 1,
+    "SinkBasin": 1
+   }
+  },
+  {
+   "cls": "Drawer",
+   "n": 2751,
+   "ap50": 0.9947402552548155,
+   "ap50_oracle_relabel": 0.9952418191621525,
+   "correct": 0.983,
+   "cls_err": 0.001,
+   "loc_err": 0.007,
+   "missed": 0.008,
+   "confused_with": {
+    "Cabinet": 4
+   }
+  },
+  {
+   "cls": "Floor",
+   "n": 1954,
+   "ap50": 0.9947628930629305,
+   "ap50_oracle_relabel": 0.9947362129453353,
+   "correct": 0.99,
+   "cls_err": 0.001,
+   "loc_err": 0.005,
+   "missed": 0.004,
+   "confused_with": {
+    "GarbageCan": 1,
+    "Stool": 1
+   }
+  },
+  {
+   "cls": "WineBottle",
+   "n": 586,
+   "ap50": 0.9956322056629607,
+   "ap50_oracle_relabel": 0.9968020385879782,
+   "correct": 0.988,
+   "cls_err": 0.002,
+   "loc_err": 0.0,
+   "missed": 0.01,
+   "confused_with": {
+    "Fridge": 1
+   }
+  },
+  {
+   "cls": "CoffeeMachine",
+   "n": 952,
+   "ap50": 0.9976058572817437,
+   "ap50_oracle_relabel": 0.998513049997697,
+   "correct": 0.989,
+   "cls_err": 0.001,
+   "loc_err": 0.003,
+   "missed": 0.006,
+   "confused_with": {
+    "Pot": 1
+   }
+  },
+  {
+   "cls": "GarbageBag",
+   "n": 538,
+   "ap50": 0.9980803877928707,
+   "ap50_oracle_relabel": 0.9980918612121673,
+   "correct": 0.989,
+   "cls_err": 0.0,
+   "loc_err": 0.002,
+   "missed": 0.009,
+   "confused_with": {}
+  },
+  {
+   "cls": "LightSwitch",
+   "n": 279,
+   "ap50": 0.9985123195147284,
+   "ap50_oracle_relabel": 0.9984187184509454,
+   "correct": 0.989,
+   "cls_err": 0.0,
+   "loc_err": 0.004,
+   "missed": 0.007,
+   "confused_with": {}
+  },
+  {
+   "cls": "Stool",
+   "n": 887,
+   "ap50": 0.9990053477264434,
+   "ap50_oracle_relabel": 0.9978956283690863,
+   "correct": 0.99,
+   "cls_err": 0.0,
+   "loc_err": 0.002,
+   "missed": 0.008,
+   "confused_with": {}
+  },
+  {
+   "cls": "Blinds",
+   "n": 675,
+   "ap50": 0.9992622558657152,
+   "ap50_oracle_relabel": 0.9992233625709078,
+   "correct": 0.996,
+   "cls_err": 0.0,
+   "loc_err": 0.004,
+   "missed": 0.0,
+   "confused_with": {}
+  },
+  {
+   "cls": "Toaster",
+   "n": 770,
+   "ap50": 0.9995692748635934,
+   "ap50_oracle_relabel": 0.9997684789277965,
+   "correct": 0.999,
+   "cls_err": 0.0,
+   "loc_err": 0.0,
+   "missed": 0.001,
+   "confused_with": {}
+  },
+  {
+   "cls": "Microwave",
+   "n": 985,
+   "ap50": 0.9996088427448693,
+   "ap50_oracle_relabel": 0.9997933699368383,
+   "correct": 0.997,
+   "cls_err": 0.0,
+   "loc_err": 0.0,
+   "missed": 0.003,
+   "confused_with": {}
+  }
+ ],
+ "weights_sha256": "552873310f241a5e5979af0e709f19a646dcb2f29f848cdde6e681fc5951c9dd",
+ "weights_file": "sim/weights/v3/FloorPlan15.yolo26s.pt"
+}

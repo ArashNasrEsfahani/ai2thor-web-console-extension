@@ -1,0 +1,159 @@
+{
+ "exclude": [
+  "Knife"
+ ],
+ "kitchen": "FloorPlan17",
+ "map_file": "step5/lookalike_map_FloorPlan17.json",
+ "map_sha256": "efc9fdb9b96e7bb7f47aefacbe95123868dcb10c85f63706d5af101a3af92cd1",
+ "n_targets": 9,
+ "schema": "e3.lookalike_provenance/1",
+ "sha256": "b58e62adcb15b272768277d877bed35b49718dee637589d970ff0d1231edc6d8",
+ "source": "kitchen_v3/FloorPlan17/val_errors_yolo26s.json",
+ "source_sha256": "a789dcae99a60877b4a13f79df5e9942b8aba5cb434ed6580ee85eaf9a796569",
+ "source_split": "val",
+ "surface_types": [
+  "ArmChair",
+  "Bed",
+  "Blinds",
+  "Box",
+  "Cabinet",
+  "Chair",
+  "CoffeeMachine",
+  "CoffeeTable",
+  "CounterTop",
+  "Curtains",
+  "Desk",
+  "DiningTable",
+  "Drawer",
+  "Dresser",
+  "Faucet",
+  "Floor",
+  "Fridge",
+  "GarbageCan",
+  "LightSwitch",
+  "Microwave",
+  "Ottoman",
+  "Painting",
+  "Safe",
+  "Shelf",
+  "ShelvingUnit",
+  "SideTable",
+  "Sink",
+  "SinkBasin",
+  "Sofa",
+  "Stool",
+  "StoveBurner",
+  "StoveKnob",
+  "TVStand",
+  "TableTop",
+  "Toaster",
+  "Wall",
+  "Window"
+ ],
+ "targets": {
+  "ButterKnife": {
+   "confused_with": {
+    "Fork": 11,
+    "Knife": 4,
+    "Spoon": 7
+   },
+   "map_row": {
+    "Fork": 0.0399,
+    "Spoon": 0.0254
+   },
+   "n": 276,
+   "status": "in_map"
+  },
+  "Fork": {
+   "confused_with": {
+    "ButterKnife": 2,
+    "Spatula": 2,
+    "Spoon": 5
+   },
+   "map_row": {
+    "Spoon": 0.034
+   },
+   "n": 147,
+   "status": "in_map"
+  },
+  "Pan": {
+   "confused_with": {
+    "Bowl": 1,
+    "Pot": 2,
+    "Spatula": 1
+   },
+   "map_row": {},
+   "n": 542,
+   "status": "below_theta"
+  },
+  "PepperShaker": {
+   "confused_with": {
+    "SaltShaker": 34,
+    "Spoon": 1
+   },
+   "map_row": {
+    "SaltShaker": 0.1241
+   },
+   "n": 274,
+   "status": "in_map"
+  },
+  "Plate": {
+   "confused_with": {
+    "CellPhone": 2,
+    "Pan": 2,
+    "SprayBottle": 1
+   },
+   "map_row": {},
+   "n": 319,
+   "status": "below_theta"
+  },
+  "Pot": {
+   "confused_with": {
+    "Bread": 1,
+    "Pan": 2
+   },
+   "map_row": {},
+   "n": 463,
+   "status": "below_theta"
+  },
+  "SaltShaker": {
+   "confused_with": {
+    "Pan": 2,
+    "PepperShaker": 101,
+    "SprayBottle": 2
+   },
+   "map_row": {
+    "PepperShaker": 0.4698
+   },
+   "n": 215,
+   "status": "in_map"
+  },
+  "Spatula": {
+   "confused_with": {
+    "ButterKnife": 1,
+    "Fork": 8,
+    "PepperShaker": 1
+   },
+   "map_row": {
+    "Fork": 0.0319
+   },
+   "n": 251,
+   "status": "in_map"
+  },
+  "Spoon": {
+   "confused_with": {
+    "Bottle": 1,
+    "ButterKnife": 4,
+    "Fork": 31
+   },
+   "map_row": {
+    "ButterKnife": 0.0421,
+    "Fork": 0.3263
+   },
+   "n": 95,
+   "status": "in_map"
+  }
+ },
+ "theta": 0.02,
+ "what": "supplement to the frozen look-alike map: every target row of the frozen VAL evidence, so absent evidence is not read as zero confusion; the map itself is unchanged and is recomputed from these rows at load"
+}

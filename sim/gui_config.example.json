@@ -1,0 +1,13 @@
+{
+  "endpoint": "http://127.0.0.1:11434",
+  "model": "gemma4:e2b-it-q4_K_M",
+  "capture_dir": "captures",
+  "walk_delay": 0.09,
+  "view_mode": "RGB",
+  "sensors": {
+    "depth": false,
+    "instance": true,
+    "semantic": false,
+    "normals": false
+  }
+}

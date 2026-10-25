@@ -1,0 +1,11 @@
+# Python packages for the AI2-THOR web console extension. Install inside the Linux / WSL2 environment that runs
+# the simulator (Python 3.10 recommended). Only ai2thor is hard-pinned: its Unity build cache is version-locked.
+ai2thor==5.0.0             # the simulator (Unity build)
+ultralytics>=8.4           # YOLO detectors (YOLO26s primary, YOLO26m specialist) and their training
+torch>=2.6                 # GPU backend for ultralytics; on WSL with an older driver install a cu12x wheel, see docs/setup.md
+torchvision>=0.21
+opencv-python-headless     # image I/O for perception and dataset capture
+numpy
+pillow
+chromadb                   # optional vector store for retrieval; the code falls back to a numpy index without it
+huggingface_hub            # scripts/download_weights.py (falls back to plain HTTPS without it)
