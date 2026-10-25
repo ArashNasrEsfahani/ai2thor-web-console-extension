@@ -4290,6 +4290,8 @@ def main():
     if ta is None:                     # ai2thor absent: the console cannot drive anything, so say why, loudly
         raise RuntimeError("thor_actions could not be imported (AI2-THOR is WSL-only, see CONTRIBUTING.md): "
                            f"{_TA_ERROR!r}")
+    # retrieval embeddings (sim/rag.py) use the same Ollama as the planner unless a launcher already set OLLAMA_URL
+    os.environ.setdefault("OLLAMA_URL", _llm_endpoint())
     _install_trace_hooks()             # idempotent; also covers a reload where the module-level call was a no-op
     threading.Thread(target=_worker, daemon=True).start()
     try:

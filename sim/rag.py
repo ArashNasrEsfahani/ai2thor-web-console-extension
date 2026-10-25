@@ -24,9 +24,10 @@ import logging
 import os
 import urllib.request
 
-# Where Ollama listens for embeddings when a caller passes no endpoint; scripts/start_console.sh exports the address it
-# detected (inside WSL, Ollama on Windows is NOT at localhost).
-DEFAULT_ENDPOINT = os.environ.get("OLLAMA_URL") or "http://localhost:11434"
+def default_endpoint() -> str:
+    """Where Ollama listens when a caller passes no endpoint: $OLLAMA_URL (scripts/start_console.sh and the console export
+    the endpoint they use; inside WSL, Ollama on Windows is NOT at localhost), else localhost. Read at call time."""
+    return os.environ.get("OLLAMA_URL") or "http://localhost:11434"
 
 _log = logging.getLogger("rag")
 
@@ -36,7 +37,7 @@ def _warn(msg: str):
 
 
 # --------------------------------------------------------------------------- embeddings
-def embed(texts, endpoint: str = DEFAULT_ENDPOINT,
+def embed(texts, endpoint: str | None = None,
           model: str = "nomic-embed-text", timeout: float = 60.0) -> list:
     """Embed a string or list of strings -> ``list[list[float]]`` via Ollama ``/api/embeddings``.
 
@@ -45,7 +46,7 @@ def embed(texts, endpoint: str = DEFAULT_ENDPOINT,
     """
     if isinstance(texts, str):
         texts = [texts]
-    base = endpoint.rstrip("/")
+    base = (endpoint or default_endpoint()).rstrip("/")
     out = []
     for t in texts:
         req = urllib.request.Request(
@@ -90,13 +91,13 @@ class HybridRAG:
     """
 
     def __init__(self, kb=None, path: str = "knowledge_base.json",
-                 endpoint: str = DEFAULT_ENDPOINT, model: str = "nomic-embed-text",
+                 endpoint: str | None = None, model: str = "nomic-embed-text",
                  embed_path: str | None = None):
         if kb is None:
             import knowledge  # lazy: keep `import rag` pure-stdlib and avoid a hard import-time dependency
             kb = knowledge.KnowledgeBase(path=path)
         self.kb = kb
-        self.endpoint = endpoint
+        self.endpoint = endpoint or default_endpoint()
         self.model = model
         self.embed_path = embed_path or (os.path.splitext(self.kb.path)[0] + "_embeddings.json")
         self.embeddings: dict = {}     # str(entry_id) -> vector
