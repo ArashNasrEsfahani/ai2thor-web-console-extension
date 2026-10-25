@@ -1,6 +1,6 @@
 # AI2-THOR Web Console
 
-A browser console and Python toolkit for AI2-THOR 5.0.0 (iTHOR). Drive the simulator, give an agent instructions in English or Persian, watch what it perceives and plans, evaluate it, and inspect its memory writes. The console supports all 120 iTHOR rooms. It was extracted from [MISE](https://github.com/ArashNasrEsfahani/MISE), Arash NasrEsfahani's MSc research project at the University of Tehran. This project is not affiliated with the Allen Institute for AI.
+A browser console and Python toolkit for AI2-THOR 5.0.0 (iTHOR). Drive the simulator, give an agent instructions in English or Persian, watch what it perceives and plans, evaluate it, and inspect its memory writes. The console supports all 120 iTHOR rooms. It was extracted from [MISE](https://github.com/ArashNasrEsfahani/MISE), my MSc research project at the University of Tehran. This project is not affiliated with the Allen Institute for AI.
 
 ![The honest agent putting an apple in the fridge](docs/images/honest-demo.gif)
 
