@@ -1,6 +1,6 @@
 # AI2-THOR Web Console
 
-<a href="https://taarlab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/taarlab-dark.png"><img src="docs/images/taarlab-light.png" alt="TaarLab logo" height="56"></picture></a>
+<a href="https://taarlab.com"><img src="docs/images/taarlab.png" alt="TaarLab logo" height="88" align="right"></a>
 
 A browser console and Python toolkit for AI2-THOR 5.0.0 (iTHOR). Drive the simulator, give an agent instructions in English or Persian, watch what it perceives and plans, evaluate it, and inspect its memory writes. The console supports all 120 iTHOR rooms. It was developed at [TaarLab](https://taarlab.com), the Human and Robot Interaction Lab of the University of Tehran, and extracted from [MISE](https://github.com/ArashNasrEsfahani/MISE), my MSc research project. Three of my papers were developed with it (see [Papers](#papers)). This project is not affiliated with the Allen Institute for AI.
 
