@@ -1,6 +1,8 @@
 # AI2-THOR Web Console
 
-A browser console and Python toolkit for AI2-THOR 5.0.0 (iTHOR). Drive the simulator, give an agent instructions in English or Persian, watch what it perceives and plans, evaluate it, and inspect its memory writes. The console supports all 120 iTHOR rooms. It was extracted from [MISE](https://github.com/ArashNasrEsfahani/MISE), my MSc research project at the University of Tehran. This project is not affiliated with the Allen Institute for AI.
+<a href="https://taarlab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/taarlab-dark.png"><img src="docs/images/taarlab-light.png" alt="TaarLab logo" height="56"></picture></a>
+
+A browser console and Python toolkit for AI2-THOR 5.0.0 (iTHOR). Drive the simulator, give an agent instructions in English or Persian, watch what it perceives and plans, evaluate it, and inspect its memory writes. The console supports all 120 iTHOR rooms. It was developed at [TaarLab](https://taarlab.com), the Human and Robot Interaction Lab of the University of Tehran, and extracted from [MISE](https://github.com/ArashNasrEsfahani/MISE), my MSc research project. Three of my papers were developed with it (see [Papers](#papers)). This project is not affiliated with the Allen Institute for AI.
 
 ![The honest agent putting an apple in the fridge](docs/images/honest-demo.gif)
 
@@ -126,6 +128,14 @@ The console writes its knowledge base, memory, traces, audit logs, and captures 
 - [Console, Python, and HTTP reference](docs/reference.md)
 - [Command levels and evaluation metrics](docs/metrics.md)
 - [Contributing](CONTRIBUTING.md)
+
+## Papers
+
+Three of my papers were developed with this console:
+
+- MISE, in preparation.
+- A. Nasr Esfahani, H. Hosseini, M. Tale Masouleh, A. Kalhor. [Embodied AI for Kitchen Scene Rearrangement: A Deep Spatio-Temporal Approach](https://doi.org/10.1007/s11370-026-00723-4). *Intelligent Service Robotics* 19, 71 (2026).
+- A. Nasr Esfahani, H. Hosseini, M. Tale Masouleh, A. Kalhor, H. Sajedi. [AI-Driven Relocation Tracking in Dynamic Kitchen Environments](https://doi.org/10.1109/ICCKE65377.2024.10874520). *14th International Conference on Computer and Knowledge Engineering (ICCKE)*, 2024, pp. 483–488.
 
 ## Related resources
 
